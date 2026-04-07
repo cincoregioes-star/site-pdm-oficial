@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>PDM Beberibe - Plano Diretor Municipal</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial}
+
+:root{
+--azul:#0B3C5D;
+--verde:#2E7D32;
+--areia:#F4A261;
+--cinza:#ECEFF1;
+}
+
+body{background:var(--cinza);}
+
+/* HEADER */
+header{
+background:var(--azul);
+color:white;
+padding:15px 5%;
+position:fixed;
+width:100%;
+z-index:1000;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+nav a{
+color:white;
+margin:0 10px;
+text-decoration:none;
+font-weight:bold;
+}
+
+/* HERO */
+.hero{
+background:linear-gradient(120deg,var(--azul),var(--verde));
+color:white;
+padding:140px 5%;
+}
+
+.hero h1{font-size:42px;margin-bottom:20px;}
+.hero p{font-size:18px;}
+
+/* SECTIONS */
+section{
+padding:70px 5%;
+background:white;
+margin-bottom:10px;
+}
+
+h2{
+color:var(--azul);
+margin-bottom:20px;
+}
+
+/* GRID */
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+/* CARDS */
+.card{
+background:white;
+border-radius:10px;
+padding:25px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+border-left:5px solid var(--verde);
+}
+
+/* MAPA */
+.mapa{
+height:300px;
+background:linear-gradient(45deg,#ddd,#bbb);
+display:flex;
+align-items:center;
+justify-content:center;
+border-radius:10px;
+}
+
+/* BOTÕES */
+.btn{
+background:var(--verde);
+color:white;
+padding:10px 20px;
+border-radius:5px;
+text-decoration:none;
+display:inline-block;
+margin-top:10px;
+margin-right:5px;
+font-size:14px;
+}
+
+/* FOOTER */
+footer{
+background:var(--azul);
+color:white;
+padding:40px;
+text-align:center;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div><strong>PDM Beberibe</strong></div>
+<nav>
+<a href="#sobre">Sobre</a>
+<a href="#diagnostico">Diagnóstico</a>
+<a href="#mapa">Mapa</a>
+<a href="#documentos">Documentos</a>
+<a href="#participacao">Participação</a>
+</nav>
+</header>
+
+<section class="hero">
+<h1>Plano Diretor Municipal de Beberibe</h1>
+<p>Planejamento territorial, ambiental e social com participação popular</p>
+</section>
+
+<section id="sobre">
+<h2>Sobre o Plano Diretor</h2>
+<p>
+O Plano Diretor é o principal instrumento de organização do território municipal,
+orientando o crescimento urbano, rural e ambiental de forma sustentável.
+</p>
+<p>
+O novo PDM busca integrar litoral e sertão, conciliando desenvolvimento econômico,
+proteção ambiental e inclusão social.
+</p>
+</section>
+
+<section id="diagnostico">
+<h2>Diagnóstico do Município</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Meio Ambiente</h3>
+<p>Proteção de dunas, falésias, lagoas e áreas sensíveis.</p>
+</div>
+
+<div class="card">
+<h3>Expansão Urbana</h3>
+<p>Controle da ocupação e regularização fundiária.</p>
+</div>
+
+<div class="card">
+<h3>Economia</h3>
+<p>Turismo, pesca, agricultura e potencial logístico.</p>
+</div>
+
+<div class="card">
+<h3>Infraestrutura</h3>
+<p>Saneamento, mobilidade e serviços públicos.</p>
+</div>
+
+</div>
+</section>
+
+<section id="mapa">
+<h2>Macrozoneamento (Prévia)</h2>
+
+<div class="mapa">
+<p>MAPA INTERATIVO FUTURO</p>
+</div>
+
+<p>
+O macrozoneamento organiza o território em áreas como zona costeira,
+zona urbana, rural e áreas de proteção ambiental.
+</p>
+</section>
+
+<!-- DOCUMENTOS COM PDF -->
+<section id="documentos">
+<h2>Documentos Oficiais</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Diagnóstico Preliminar</h3>
+<p>Base técnica do município.</p>
+<a href="pdf/diagnostico.pdf" target="_blank" class="btn">Ver</a>
+<a href="pdf/diagnostico.pdf" download class="btn">Baixar</a>
+</div>
+
+<div class="card">
+<h3>Regimento Interno CGA</h3>
+<p>Funcionamento da comissão.</p>
+<a href="pdf/regimento.pdf" target="_blank" class="btn">Ver</a>
+<a href="pdf/regimento.pdf" download class="btn">Baixar</a>
+</div>
+
+<div class="card">
+<h3>Distribuição por Secretarias</h3>
+<p>Responsabilidades técnicas.</p>
+<a href="pdf/secretarias.pdf" target="_blank" class="btn">Ver</a>
+<a href="pdf/secretarias.pdf" download class="btn">Baixar</a>
+</div>
+
+<div class="card">
+<h3>Checklist de Dados</h3>
+<p>Base de informações do plano.</p>
+<a href="pdf/checklist.pdf" target="_blank" class="btn">Ver</a>
+<a href="pdf/checklist.pdf" download class="btn">Baixar</a>
+</div>
+
+<div class="card">
+<h3>Calendário de Reuniões</h3>
+<p>Cronograma da CGA.</p>
+<a href="pdf/calendario.pdf" target="_blank" class="btn">Ver</a>
+<a href="pdf/calendario.pdf" download class="btn">Baixar</a>
+</div>
+
+</div>
+</section>
+
+<section id="participacao">
+<h2>Participação Popular</h2>
+
+<p>
+A população pode participar através de audiências públicas,
+oficinas territoriais e consultas abertas.
+</p>
+
+<a href="#" class="btn">Enviar Contribuição</a>
+
+<p style="margin-top:20px;">
+Acompanhe o cronograma e participe das decisões do município.
+</p>
+</section>
+
+<footer>
+<p>Plano Diretor Municipal de Beberibe - 2026</p>
+<p>Transparência • Participação • Sustentabilidade</p>
+</footer>
+
+</body>
+</html>
